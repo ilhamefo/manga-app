@@ -5,8 +5,8 @@ My First Commit Screnshot!
 
 A web based manga reading app build with Nuxt JS.
 
-Api : [API](https://github.com/febryardiansyah/manga-api)
-UI Design : [UI](https://www.behance.net/gallery/105843153/Bastiat-Mangas-Website-Ui-Design)
+- Api : [API](https://github.com/febryardiansyah/manga-api) 
+- UI Design : [UI](https://www.behance.net/gallery/105843153/Bastiat-Mangas-Website-Ui-Design)
 
 
 ## Build Setup
