@@ -1,7 +1,7 @@
 # Web Based Manga App
 
 My First Commit Screnshoot!
-[FirstCommit](assets\first_commit.jpg)
+![FirstCommit](assets\first_commit.jpg)
 
 A web based manga reading app build with Nuxt JS.
 
