@@ -1,7 +1,9 @@
 <template>
-  <div class="flex flex-col justify-center mt-10">
+  <div class="flex flex-col justify-center mt-10 w-full">
     <div class="flex items-center justify-between">
-      <div class="text-2xl my-3 font-semibold">Continue Reading</div>
+      <div class="text-2xl my-3 font-semibold">
+        <slot name="name"></slot>
+      </div>
       <div class="flex items-center">
         <div
           class="
@@ -58,17 +60,31 @@
       </div>
     </div>
     <!-- manga list cards -->
-    <div class="grid grid-cols-7 gap-6 mt-5">
-      <MangaCard v-for="i in 10" :key="i" />
-    </div>
+    <slot name="cards">
+      <div class="grid grid-cols-7 gap-6 mt-5">
+        <div
+          class="
+            bg-gray-500
+            animate-pulse
+            cursor-pointer
+            bg-cover bg-center
+            h-80
+            w-60
+            rounded-md
+            flex flex-col
+            justify-between
+            overflow-hidden
+          "
+          v-for="i in 7"
+          :key="i"
+        ></div>
+      </div>
+    </slot>
   </div>
 </template>
 
 <script>
-import MangaCard from "./MangaCard.vue";
-export default {
-  components: { MangaCard },
-};
+export default {};
 </script>
 
 <style>

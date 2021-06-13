@@ -1,13 +1,17 @@
 # Web Based Manga App
 
 My First Commit Screnshot!
-![Screnshot](first_commit.jpg)
+![Screenshot](first_commit.jpg)
+
+Second day working on manga details and done working on index page!
+![Screenshot](day2.jpg)
+
 
 A web based manga reading app build with Nuxt JS.
 
 - Api : [API](https://github.com/febryardiansyah/manga-api) 
 - UI Design : [UI](https://www.behance.net/gallery/105843153/Bastiat-Mangas-Website-Ui-Design)
-
+- Icons : [HeroIcons](https://heroicons.com/)
 
 ## Build Setup
 

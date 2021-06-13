@@ -1,5 +1,6 @@
 <template>
-  <div
+  <NuxtLink
+    :to="`/manga/${item.endpoint}`"
     class="
       cursor-pointer
       bg-cover bg-center
@@ -9,10 +10,10 @@
       flex flex-col
       justify-between
       overflow-hidden
+      mr-3
     "
     :style="{
-      'background-image':
-        'url(https://cover.komiku.id/wp-content/uploads/2020/09/Manga-Tokyo-Revengers.jpg?w=225&quality=60)',
+      'background-image': `url(${item.thumb})`,
     }"
   >
     <div
@@ -55,14 +56,22 @@
         py-3
       "
     >
-      <div class="px-2 text-base">Tokyo卍Revengers</div>
-      <div class="px-2 text-sm text-gray-300">Chapter 180</div>
+      <div class="px-2 text-base font-semibold line-clamp-2">
+        {{ item.title }}
+      </div>
+
+      <div class="px-2 text-sm text-gray-300">
+        <slot></slot>
+      </div>
     </div>
-  </div>
+  </NuxtLink>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["item"],
+  methods: {},
+};
 </script>
 
 <style>
