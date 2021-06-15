@@ -13,8 +13,13 @@
     <Header />
 
     <Nuxt />
+
+    <Footer />
   </div>
 </template>
 
 <style>
 </style>
+
+<script>
+</script>

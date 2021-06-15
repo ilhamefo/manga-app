@@ -1,12 +1,12 @@
 <template>
   <div class="flex items-center justify-between w-full">
     <div class="flex items-center">
-      <a href="#">
+      <NuxtLink to="/">
         <img
           :src="require('~/assets/icons/logo-manga.png')"
           class="w-44 mr-10"
         />
-      </a>
+      </NuxtLink>
       <div class="flex items-center bg-gray-600 rounded-md overflow-hidden">
         <input
           type="text"

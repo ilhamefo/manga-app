@@ -28,7 +28,9 @@
         from-black
       "
     >
-      <div class="rounded-md bg-gray-700 px-2 py-1 text-xs">Manga</div>
+      <div class="rounded-md bg-gray-700 px-2 py-1 text-xs">
+        {{ item.type == null ? "Manga" : item.type }}
+      </div>
       <div class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
